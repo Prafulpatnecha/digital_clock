@@ -15,9 +15,16 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+
+https://github.com/Prafulpatnecha/digital_clock/assets/144161200/48780e93-239e-4aa6-abc3-da631bc12a4e
+
+
 <h2>👉 Digital Clock 👈</h2>
 <hr>
 <p>
+  <video autoplay loop style="width:100%; height: auto; position:absolute; z-index: -1;">
+<source src="https://github.com/Prafulpatnecha/digital_clock/assets/144161200/48780e93-239e-4aa6-abc3-da631bc12a4e" type="video/mp4" />
+</video>
 <a href ="">
 <img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240502_095753.png" width="22%" Height="35%">
 <img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240502_095743.png" width="22%" Height="35%">
