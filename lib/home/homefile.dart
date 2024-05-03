@@ -2,9 +2,7 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:digital_clock/utils/image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../utils/funtionprogram.dart';
 import '../utils/globle_list.dart';
@@ -145,7 +143,7 @@ class _HomePageState extends State<HomePage> {
             Container(
               height: 300,
               width: 300,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 // color: Colors.black,
                 shape: BoxShape.circle,
                 // border: Border.all(
@@ -189,9 +187,9 @@ class _HomePageState extends State<HomePage> {
                         ...List.generate(60, (index)=> Transform.rotate(
                           angle: ((index+1)*12*pi)/360,
                           child: ((index+1)%5==0)?
-                          Stack(
+                          const Stack(
                             children: [
-                              const VerticalDivider(
+                              VerticalDivider(
                                 thickness: 4,
                                   color: Colors.green,
                                 indent: 0,
@@ -199,7 +197,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                               // Text(index.toString()),
                             ],
-                          ):VerticalDivider(
+                          ):const VerticalDivider(
                             thickness: 2,
                             color: Colors.white,
                             indent: 0,
