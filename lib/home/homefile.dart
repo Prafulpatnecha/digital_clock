@@ -1,6 +1,8 @@
 import 'dart:async';
+import 'dart:math';
 
 import 'package:digital_clock/utils/image.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/funtionprogram.dart';
@@ -35,6 +37,7 @@ class _HomePageState extends State<HomePage> {
       setState(() {
         time();
         datetime = DateTime.now();
+        hourArrow();
       });
     });
     double h = MediaQuery.of(context).size.height;
@@ -44,9 +47,10 @@ class _HomePageState extends State<HomePage> {
         height: h,
         width: w,
         decoration: BoxDecoration(
-            // color: Colors.cyan,
+            color: Colors.deepPurple,
             image: DecorationImage(
-                image: (boolck == true) ? beck1 : beck2, fit: BoxFit.cover)),
+                image: (boolck == true) ? beck1 : beck2, fit: BoxFit.cover)
+            ),
         child: Column(
           children: [
             const SizedBox(
@@ -63,7 +67,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             const SizedBox(
-              height: 280,
+              height: 50,
             ),
             const Icon(
               Icons.notifications_active_outlined,
@@ -120,7 +124,7 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.white,
                     fontSize: 40,
                   ),
-                )
+                ),
               ]),
             ),
             Text(
@@ -129,6 +133,89 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.white,
                   fontSize: 17,
                   fontWeight: FontWeight.bold),
+            ),
+            const Divider(
+            indent: 20,
+              thickness: 10,
+              height: 100,
+              endIndent: 20,
+              color: Colors.white38,
+            ),
+            Container(
+              height: 280,
+              width: 280,
+              decoration: BoxDecoration(
+                // color: Colors.black,
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.white,
+                  width: 2,
+                ),
+              ),
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  ...List.generate(60, (index)=> Transform.rotate(
+                    angle: ((index+1)*12*pi)/360,
+                    child: ((index+1)%5==0)?
+                    Stack(
+                      children: [
+                        const VerticalDivider(
+                          thickness: 4,
+                            color: Colors.green,
+                          indent: 0,
+                          endIndent: 250,
+                        ),
+                        // Text(index.toString()),
+                      ],
+                    ):VerticalDivider(
+                      thickness: 2,
+                      color: Colors.white,
+                      indent: 0,
+                      endIndent: 260,
+                    ),
+                    )),
+                  Transform.rotate(//todo<<<<<<<<<<<<<<<<<<<<<<<<(HOUR Arrow)<<<<<<<<<<<<<<<<<<<<<<<<<
+                    // angle: ((datetime.minute+1)*9*pi)/4320,
+                    angle: ((arrowhour)*30*pi)/180,
+                    child: const VerticalDivider(
+                      width: 10,
+                      color: Colors.yellow,
+                      endIndent: 120,
+                      thickness: 3,
+                      indent: 80,
+                    ),
+                  ),
+                  Transform.rotate(
+                    angle: (datetime.minute*6*pi)/180,
+                    child: const VerticalDivider(
+                      width: 10,
+                      color: Colors.cyanAccent,
+                      endIndent: 120,
+                      thickness: 3,
+                      indent: 70,
+                    ),
+                  ),
+                  Transform.rotate(
+                    angle: (datetime.second*6*pi)/180,
+                    child: const VerticalDivider(
+                      width: 10,
+                      color: Colors.red,
+                      endIndent: 120,
+                      thickness: 3,
+                      indent: 40,
+                    ),
+                  ),
+                  Container(
+                    height: 10,
+                    width: 10,
+                    decoration: const BoxDecoration(
+                      color: Colors.red,
+                      shape: BoxShape.circle
+                    ),
+                  ),
+                ],
+              ),
             ),
             const Spacer(),
             ElevatedButton(
@@ -150,11 +237,11 @@ class _HomePageState extends State<HomePage> {
                     style: TextStyle(
                       fontSize: 20,
                     ),
-                  )),
-                )),
+                  ),),
+                ),),
             const SizedBox(
               height: 40,
-            )
+            ),
           ],
         ),
       ),
