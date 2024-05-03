@@ -17,16 +17,20 @@ samples, guidance on mobile development, and a full API reference.
 
 
 
+https://github.com/Prafulpatnecha/digital_clock/assets/144161200/51cc9e68-7d7c-4d51-8a19-d4a00bf6f70c
+
+
+
 <h2>👉 Digital Clock 👈</h2>
 <hr>
 <p>
   <video autoplay loop style="width:100%; height: auto; position:absolute; z-index: -1;">
-<source src="https://github.com/Prafulpatnecha/digital_clock/assets/144161200/48780e93-239e-4aa6-abc3-da631bc12a4e" type="video/mp4" />
+<source src="https://github.com/Prafulpatnecha/digital_clock/assets/144161200/51cc9e68-7d7c-4d51-8a19-d4a00bf6f70c" type="video/mp4" />
 </video>
 <a href ="">
-<img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240502_095753.png" width="22%" Height="35%">
-<img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240502_095743.png" width="22%" Height="35%">
-<img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240503_121610.png" width="22%" Height="35%">
+<!-- <img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240502_095753.png" width="22%" Height="35%"> -->
+<!-- <img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240502_095743.png" width="22%" Height="35%"> -->
+<!-- <img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240503_121610.png" width="22%" Height="35%"> -->
 <img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240503_200426.png" width="22%" Height="35%">
 </a>
 </p>
