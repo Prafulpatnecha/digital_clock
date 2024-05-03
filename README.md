@@ -21,6 +21,7 @@ samples, guidance on mobile development, and a full API reference.
 <a href ="">
 <img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240502_095753.png" width="22%" Height="35%">
 <img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240502_095743.png" width="22%" Height="35%">
+<img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240503_121610.png" width="22%" Height="35%">
 </a>
 </p>
 <hr>
