@@ -16,8 +16,6 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 
-https://github.com/Prafulpatnecha/digital_clock/assets/144161200/48780e93-239e-4aa6-abc3-da631bc12a4e
-
 
 <h2>👉 Digital Clock 👈</h2>
 <hr>
