@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:digital_clock/utils/image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 import '../utils/funtionprogram.dart';
 import '../utils/globle_list.dart';
@@ -37,7 +38,7 @@ class _HomePageState extends State<HomePage> {
       setState(() {
         time();
         datetime = DateTime.now();
-        hourArrow();
+        // hourArrow();
       });
     });
     double h = MediaQuery.of(context).size.height;
@@ -142,76 +143,109 @@ class _HomePageState extends State<HomePage> {
               color: Colors.white38,
             ),
             Container(
-              height: 280,
-              width: 280,
+              height: 300,
+              width: 300,
               decoration: BoxDecoration(
                 // color: Colors.black,
                 shape: BoxShape.circle,
-                border: Border.all(
-                  color: Colors.white,
-                  width: 2,
-                ),
+                // border: Border.all(
+                //   color: Colors.white,
+                //   width: 2,
+                // ),
               ),
               child: Stack(
                 alignment: Alignment.center,
                 children: [
-                  ...List.generate(60, (index)=> Transform.rotate(
-                    angle: ((index+1)*12*pi)/360,
-                    child: ((index+1)%5==0)?
-                    Stack(
-                      children: [
-                        const VerticalDivider(
-                          thickness: 4,
-                            color: Colors.green,
-                          indent: 0,
-                          endIndent: 250,
+                        SizedBox(
+                          height: 300,
+                          width: 300,
+                          child: CircularProgressIndicator(
+                            color: Colors.red,
+                            value: datetime.second/60,
+                          ),
                         ),
-                        // Text(index.toString()),
+                        SizedBox(
+                          height: 292,
+                          width: 292,
+                          child: CircularProgressIndicator(
+                            color: Colors.cyanAccent,
+                            value: datetime.minute/60,
+                          ),
+                        ),
+                  SizedBox(
+                          height: 285,
+                          width: 285,
+                          child: CircularProgressIndicator(
+                            color: Colors.yellowAccent,
+                            value: (hour!=12)?((hour+datetime.minute/60)/12):(0+datetime.minute/60)/12,//todo <<<<<<<<<<<<<<<<<<<<<<<<HOUR
+                          ),
+                        ),
+                  SizedBox(
+                    height: 280,
+                    width: 280,
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        ...List.generate(60, (index)=> Transform.rotate(
+                          angle: ((index+1)*12*pi)/360,
+                          child: ((index+1)%5==0)?
+                          Stack(
+                            children: [
+                              const VerticalDivider(
+                                thickness: 4,
+                                  color: Colors.green,
+                                indent: 0,
+                                endIndent: 250,
+                              ),
+                              // Text(index.toString()),
+                            ],
+                          ):VerticalDivider(
+                            thickness: 2,
+                            color: Colors.white,
+                            indent: 0,
+                            endIndent: 260,
+                          ),
+                          ),),
+                        Transform.rotate(//todo<<<<<<<<<<<<<<<<<<<<<<<<(HOUR Arrow)<<<<<<<<<<<<<<<<<<<<<<<<<
+                          angle: ((datetime.hour+datetime.minute/60)*30*pi)/180,
+                          // angle: ((arrowhour)*30*pi)/180,
+                          child: const VerticalDivider(
+                            width: 10,
+                            color: Colors.yellow,
+                            endIndent: 120,
+                            thickness: 3,
+                            indent: 80,
+                          ),
+                        ),
+                        Transform.rotate(
+                          angle: (datetime.minute*6*pi)/180,
+                          child: const VerticalDivider(
+                            width: 10,
+                            color: Colors.cyanAccent,
+                            endIndent: 120,
+                            thickness: 3,
+                            indent: 70,
+                          ),
+                        ),
+                        Transform.rotate(
+                          angle: (datetime.second*6*pi)/180,
+                          child: const VerticalDivider(
+                            width: 10,
+                            color: Colors.red,
+                            endIndent: 120,
+                            thickness: 3,
+                            indent: 40,
+                          ),
+                        ),
+                        Container(
+                          height: 10,
+                          width: 10,
+                          decoration: const BoxDecoration(
+                            color: Colors.red,
+                            shape: BoxShape.circle
+                          ),
+                        ),
                       ],
-                    ):VerticalDivider(
-                      thickness: 2,
-                      color: Colors.white,
-                      indent: 0,
-                      endIndent: 260,
-                    ),
-                    )),
-                  Transform.rotate(//todo<<<<<<<<<<<<<<<<<<<<<<<<(HOUR Arrow)<<<<<<<<<<<<<<<<<<<<<<<<<
-                    // angle: ((datetime.minute+1)*9*pi)/4320,
-                    angle: ((arrowhour)*30*pi)/180,
-                    child: const VerticalDivider(
-                      width: 10,
-                      color: Colors.yellow,
-                      endIndent: 120,
-                      thickness: 3,
-                      indent: 80,
-                    ),
-                  ),
-                  Transform.rotate(
-                    angle: (datetime.minute*6*pi)/180,
-                    child: const VerticalDivider(
-                      width: 10,
-                      color: Colors.cyanAccent,
-                      endIndent: 120,
-                      thickness: 3,
-                      indent: 70,
-                    ),
-                  ),
-                  Transform.rotate(
-                    angle: (datetime.second*6*pi)/180,
-                    child: const VerticalDivider(
-                      width: 10,
-                      color: Colors.red,
-                      endIndent: 120,
-                      thickness: 3,
-                      indent: 40,
-                    ),
-                  ),
-                  Container(
-                    height: 10,
-                    width: 10,
-                    decoration: const BoxDecoration(
-                      color: Colors.red,
-                      shape: BoxShape.circle
                     ),
                   ),
                 ],

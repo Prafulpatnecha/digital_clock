@@ -42,41 +42,41 @@ void time()
 }
 
 
-void hourArrow()
-{
-  arrowhour=datetime.hour.toDouble();
-  if(datetime.minute>=6 && datetime.minute<=12)
-    {
-      arrowhour=(datetime.hour+0.1);
-    }if(datetime.minute>=12 && datetime.minute<=18)
-    {
-      arrowhour=(datetime.hour+0.2);
-    }
-  else if(datetime.minute>18 && datetime.minute<=24)
-    {
-      arrowhour=(datetime.hour+0.3);
-    }else if(datetime.minute>24 && datetime.minute<=30)
-    {
-      arrowhour=(datetime.hour+0.4);
-    }else if(datetime.minute>30 && datetime.minute<=36)
-    {
-      arrowhour=(datetime.hour+0.5);
-    }else if(datetime.minute>36 && datetime.minute<=42)
-    {
-      arrowhour=(datetime.hour+0.6);
-    }else if(datetime.minute>42 && datetime.minute<=48)
-    {
-      arrowhour=(datetime.hour+0.7);
-    }else if(datetime.minute>48 && datetime.minute<=54)
-    {
-      arrowhour=(datetime.hour+0.8);
-    }else if(datetime.minute>54 && datetime.minute<=59)
-    {
-      arrowhour=(datetime.hour+0.9);
-    }
-  // switch(datetime.minute)
-  //     {
-  //   case 15:
-  // }
-  // print(arrowhour);
-}
+// void hourArrow()
+// {
+//   arrowhour=datetime.hour.toDouble();
+//   if(datetime.minute>=6 && datetime.minute<=12)
+//     {
+//       arrowhour=(datetime.hour+0.1);
+//     }if(datetime.minute>=12 && datetime.minute<=18)
+//     {
+//       arrowhour=(datetime.hour+0.2);
+//     }
+//   else if(datetime.minute>18 && datetime.minute<=24)
+//     {
+//       arrowhour=(datetime.hour+0.3);
+//     }else if(datetime.minute>24 && datetime.minute<=30)
+//     {
+//       arrowhour=(datetime.hour+0.4);
+//     }else if(datetime.minute>30 && datetime.minute<=36)
+//     {
+//       arrowhour=(datetime.hour+0.5);
+//     }else if(datetime.minute>36 && datetime.minute<=42)
+//     {
+//       arrowhour=(datetime.hour+0.6);
+//     }else if(datetime.minute>42 && datetime.minute<=48)
+//     {
+//       arrowhour=(datetime.hour+0.7);
+//     }else if(datetime.minute>48 && datetime.minute<=54)
+//     {
+//       arrowhour=(datetime.hour+0.8);
+//     }else if(datetime.minute>54 && datetime.minute<=59)
+//     {
+//       arrowhour=(datetime.hour+0.9);
+//     }
+//   // switch(datetime.minute)
+//   //     {
+//   //   case 15:
+//   // }
+//   // print(arrowhour);
+// }
