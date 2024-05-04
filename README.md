@@ -17,7 +17,10 @@ samples, guidance on mobile development, and a full API reference.
 
 
 
-https://github.com/Prafulpatnecha/digital_clock/assets/144161200/51cc9e68-7d7c-4d51-8a19-d4a00bf6f70c
+
+
+https://github.com/Prafulpatnecha/digital_clock/assets/144161200/10752bb0-4712-4c92-a84f-ad5d6e96f954
+
 
 
 
@@ -25,7 +28,7 @@ https://github.com/Prafulpatnecha/digital_clock/assets/144161200/51cc9e68-7d7c-4
 <hr>
 <p>
   <video autoplay loop style="width:100%; height: auto; position:absolute; z-index: -1;">
-<source src="https://github.com/Prafulpatnecha/digital_clock/assets/144161200/51cc9e68-7d7c-4d51-8a19-d4a00bf6f70c" type="video/mp4" />
+<source src="https://github.com/Prafulpatnecha/digital_clock/assets/144161200/10752bb0-4712-4c92-a84f-ad5d6e96f954" type="video/mp4" />
 </video>
 <a href ="">
 <!-- <img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240502_095753.png" width="22%" Height="35%"> -->
