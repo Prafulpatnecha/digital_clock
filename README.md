@@ -29,7 +29,7 @@ https://github.com/Prafulpatnecha/digital_clock/assets/144161200/10752bb0-4712-4
   <video autoplay loop style="width:100%; height: auto; position:absolute; z-index: -1;">
 <source src="https://github.com/Prafulpatnecha/digital_clock/assets/144161200/10752bb0-4712-4c92-a84f-ad5d6e96f954" type="video/mp4" />
 </video>
-<a href ="">
+<!-- <a href =""> -->
 <!-- <img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240502_095753.png" width="22%" Height="35%"> -->
 <!-- <img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240502_095743.png" width="22%" Height="35%"> -->
 <!-- <img src="https://github.com/Prafulpatnecha/digital_clock/blob/master/Screenshot_20240503_121610.png" width="22%" Height="35%"> -->
@@ -37,6 +37,6 @@ https://github.com/Prafulpatnecha/digital_clock/assets/144161200/10752bb0-4712-4
 <img src="https://github.com/Prafulpatnecha/digital_clock/assets/144161200/af8cffc1-fda0-47b5-a3e4-2b259a278eb6" width="22%" Height="35%">
 <img src="https://github.com/Prafulpatnecha/digital_clock/assets/144161200/01fd36bf-c5ab-4a6a-a83d-b7f6b82a2f04" width="22%" Height="35%">
 <img src="https://github.com/Prafulpatnecha/digital_clock/assets/144161200/74eec1d0-230b-4bb3-9ca3-950e50d93351" width="22%" Height="35%">
-</a>
+<!-- </a> -->
 </p>
 <hr>
