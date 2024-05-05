@@ -17,7 +17,8 @@ class _SmartArrowState extends State<SmartArrow> {
   Widget build(BuildContext context) {
                       // setState(() {
                       // });
-    Timer.periodic(const Duration(seconds: 1), (timer) {
+    Timer.periodic(const Duration(seconds: 1), (timer)
+    {
       setState(() {
         //TODO USE NUMBER SHOW arrownum=1;
         datetime = DateTime.now();
@@ -102,7 +103,8 @@ class _SmartArrowState extends State<SmartArrow> {
                       height: 10,
                       width: 10,
                       decoration: const BoxDecoration(
-                          color: Colors.red, shape: BoxShape.circle),
+                          color: Colors.red, shape: BoxShape.circle
+                      ),
                     ),
                   ],
                 ),

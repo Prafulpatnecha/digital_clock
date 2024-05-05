@@ -154,6 +154,11 @@ class _SmartClockState extends State<SmartClock> {
                           style: const TextStyle(
                               fontSize: 15, color: Colors.white),
                         ),
+                        Text(
+                          (datetime.hour>=12)?pm:am,
+                          style: const TextStyle(
+                              fontSize: 35, color: Colors.white),
+                        ),
                       ],
                     ),
                   ],
