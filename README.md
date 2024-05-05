@@ -1,4 +1,4 @@
-![Screenshot_20240505_140648](https://github.com/Prafulpatnecha/digital_clock/assets/144161200/6a592909-3366-449d-82fc-2d531f48b9bc)# digital_clock
+# digital_clock
 
 A new Flutter project.
 
@@ -18,7 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 
 
 
-https://github.com/Prafulpatnecha/digital_clock/assets/144161200/10752bb0-4712-4c92-a84f-ad5d6e96f954
+
 
 
 
